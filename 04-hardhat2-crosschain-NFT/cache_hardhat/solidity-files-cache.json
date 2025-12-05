@@ -1,0 +1,3072 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/contracts/CCIPReceiver.sol": {
+      "lastModificationDate": 1764227785827,
+      "contentHash": "76f9655daa1c5a4c9a70d21ffeb6b51e",
+      "sourceName": "contracts/CCIPReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts-ccip/contracts/interfaces/IAny2EVMMessageReceiver.sol",
+        "@chainlink/contracts-ccip/contracts/libraries/Client.sol",
+        "@openzeppelin/contracts/utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "CCIPReceiver"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts-ccip@1.6.3_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/contracts-ccip/contracts/interfaces/IAny2EVMMessageReceiver.sol": {
+      "lastModificationDate": 1764226089668,
+      "contentHash": "df78147389a510320e8264cd174a928d",
+      "sourceName": "@chainlink/contracts-ccip/contracts/interfaces/IAny2EVMMessageReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Client.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAny2EVMMessageReceiver"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts-ccip@1.6.3_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/contracts-ccip/contracts/libraries/Client.sol": {
+      "lastModificationDate": 1764226089660,
+      "contentHash": "0361a9ee5bfaf18158718af48e75fb74",
+      "sourceName": "@chainlink/contracts-ccip/contracts/libraries/Client.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Client"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1764226090122,
+      "contentHash": "de0163561b417b800d01749cbbe2147e",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/contracts/NFTLockAndReleaseSender.sol": {
+      "lastModificationDate": 1764228116777,
+      "contentHash": "306e4137f3232351e5e9e1d316b55c00",
+      "sourceName": "contracts/NFTLockAndReleaseSender.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./CCIPReceiver.sol",
+        "@chainlink/contracts-ccip/contracts/interfaces/IRouterClient.sol",
+        "@chainlink/contracts-ccip/contracts/libraries/Client.sol",
+        "@chainlink/contracts/src/v0.8/shared/access/OwnerIsCreator.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "MessageTracker"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts-ccip@1.6.3_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/contracts-ccip/contracts/interfaces/IRouterClient.sol": {
+      "lastModificationDate": 1764226089677,
+      "contentHash": "b94dd67dd4826e31b9790f51eadc9538",
+      "sourceName": "@chainlink/contracts-ccip/contracts/interfaces/IRouterClient.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Client.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IRouterClient"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1764226090124,
+      "contentHash": "5517c8678c18eb1a8ba58810e7ca39ca",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts@1.4.0_ethers@6.15.0/node_modules/@chainlink/contracts/src/v0.8/shared/access/OwnerIsCreator.sol": {
+      "lastModificationDate": 1764226086306,
+      "contentHash": "2e85bb7fde60a677f51b71cf01998621",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/access/OwnerIsCreator.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ConfirmedOwner.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnerIsCreator"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1764226090140,
+      "contentHash": "697fd27924863e77c17dace2179018b2",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../extensions/IERC20Permit.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts@1.4.0_ethers@6.15.0/node_modules/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner.sol": {
+      "lastModificationDate": 1764226086049,
+      "contentHash": "1ed782c1e3014a255f9171aefc3cdde3",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ConfirmedOwnerWithProposal.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConfirmedOwner"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts@1.4.0_ethers@6.15.0/node_modules/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal.sol": {
+      "lastModificationDate": 1764226086050,
+      "contentHash": "f29daa205dcbdc6037de8e38e5a34158",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IOwnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConfirmedOwnerWithProposal"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts@1.4.0_ethers@6.15.0/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable.sol": {
+      "lastModificationDate": 1764226086204,
+      "contentHash": "b3ae9b7345205a0a65f3e0f89c176d88",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOwnable"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1764226090091,
+      "contentHash": "79c699f80eb8a9b168cb34e37816f894",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+      "lastModificationDate": 1764226090125,
+      "contentHash": "da291753fa4641f2c5837bfc4aa4c01b",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/contracts/NFTBurnAndMintReciever.sol": {
+      "lastModificationDate": 1764227810370,
+      "contentHash": "bb789a3b413dbe9dc0f0acf74f8ec3f4",
+      "sourceName": "contracts/NFTBurnAndMintReciever.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./CCIPReceiver.sol",
+        "@chainlink/contracts-ccip/contracts/interfaces/IRouterClient.sol",
+        "@chainlink/contracts-ccip/contracts/libraries/Client.sol",
+        "@chainlink/contracts/src/v0.8/shared/access/OwnerIsCreator.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "Acknowledger"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/chainlink/shared/token/ERC677/BurnMintERC677.sol": {
+      "lastModificationDate": 1764226090156,
+      "contentHash": "f1b494ee3bd8cbbe2258e3afd1ac72da",
+      "sourceName": "@chainlink/local/src/vendor/chainlink/shared/token/ERC677/BurnMintERC677.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC20/IBurnMintERC20.sol",
+        "./IERC677.sol",
+        "@chainlink/contracts/src/v0.8/shared/access/OwnerIsCreator.sol",
+        "./ERC677.sol",
+        "../../../../openzeppelin-solidity/v4.8.3/contracts/token/ERC20/IERC20.sol",
+        "../../../../openzeppelin-solidity/v4.8.3/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "../../../../openzeppelin-solidity/v4.8.3/contracts/utils/introspection/IERC165.sol",
+        "../../../../openzeppelin-solidity/v4.8.3/contracts/utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "BurnMintERC677"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1764226090173,
+      "contentHash": "d3f395dc838796643e7a71419900ab23",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/chainlink/shared/token/ERC677/ERC677.sol": {
+      "lastModificationDate": 1764226090170,
+      "contentHash": "2b1c2f5483699e9af5bdcc559a8bad1a",
+      "sourceName": "@chainlink/local/src/vendor/chainlink/shared/token/ERC677/ERC677.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts/src/v0.8/shared/interfaces/IERC677Receiver.sol",
+        "./IERC677.sol",
+        "../../../../openzeppelin-solidity/v4.8.3/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC677"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/chainlink/shared/token/ERC20/IBurnMintERC20.sol": {
+      "lastModificationDate": 1764226090171,
+      "contentHash": "6a312c741ab9da7a4bd3449585efa911",
+      "sourceName": "@chainlink/local/src/vendor/chainlink/shared/token/ERC20/IBurnMintERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../../openzeppelin-solidity/v4.8.3/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBurnMintERC20"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/utils/structs/EnumerableSet.sol": {
+      "lastModificationDate": 1764226090166,
+      "contentHash": "6116ca703456923afc88ce24b466ac80",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/utils/structs/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1764226090172,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/extensions/ERC20Burnable.sol": {
+      "lastModificationDate": 1764226090169,
+      "contentHash": "a1c7f80ae26f5b2d7d563475627fbf25",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/chainlink/shared/token/ERC677/IERC677.sol": {
+      "lastModificationDate": 1764226090176,
+      "contentHash": "41a8dd702db7bbb8109ec60a71482790",
+      "sourceName": "@chainlink/local/src/vendor/chainlink/shared/token/ERC677/IERC677.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC677"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts@1.4.0_ethers@6.15.0/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/IERC677Receiver.sol": {
+      "lastModificationDate": 1764226086191,
+      "contentHash": "c73f0d0e1d270b32a66512039681f520",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/IERC677Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.6"
+      ],
+      "artifacts": [
+        "IERC677Receiver"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1764226090168,
+      "contentHash": "800022978fe6583029fbd69e7fd3000e",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/utils/Context.sol": {
+      "lastModificationDate": 1764226090159,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1764226090174,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1764226090186,
+      "contentHash": "a34c24f3b749da6dd50c77f0a7b5f3bc",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../extensions/draft-IERC20Permit.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/utils/Address.sol": {
+      "lastModificationDate": 1764226090154,
+      "contentHash": "90a27b63e1866665663707895941e20b",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/extensions/draft-IERC20Permit.sol": {
+      "lastModificationDate": 1764226090161,
+      "contentHash": "390f0ad973d3649a8fb152fd1b00f8dd",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/chainlink-ccip/test/mocks/MockRouter.sol": {
+      "lastModificationDate": 1764226090181,
+      "contentHash": "e2d02686fd1bb6e3aac6e1d0c11e368b",
+      "sourceName": "@chainlink/local/src/vendor/chainlink-ccip/test/mocks/MockRouter.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts-ccip/contracts/interfaces/IAny2EVMMessageReceiver.sol",
+        "@chainlink/contracts-ccip/contracts/interfaces/IRouter.sol",
+        "@chainlink/contracts-ccip/contracts/interfaces/IRouterClient.sol",
+        "@chainlink/contracts-ccip/contracts/libraries/Client.sol",
+        "@chainlink/contracts-ccip/contracts/libraries/Internal.sol",
+        "@chainlink/contracts/src/v0.8/shared/call/CallWithExactGas.sol",
+        "../../../openzeppelin-solidity/v4.8.3/contracts/token/ERC20/IERC20.sol",
+        "../../../openzeppelin-solidity/v4.8.3/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../../../openzeppelin-solidity/v5.0.2/contracts/utils/introspection/ERC165Checker.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "MockCCIPRouter"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts-ccip@1.6.3_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/contracts-ccip/contracts/interfaces/IRouter.sol": {
+      "lastModificationDate": 1764226089676,
+      "contentHash": "6a164db7f6ad60af2561fff4ba7bacc4",
+      "sourceName": "@chainlink/contracts-ccip/contracts/interfaces/IRouter.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Client.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRouter"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts-ccip@1.6.3_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/contracts-ccip/contracts/libraries/Internal.sol": {
+      "lastModificationDate": 1764226089674,
+      "contentHash": "c2fc6023a9964fb5f0d2f39476703182",
+      "sourceName": "@chainlink/contracts-ccip/contracts/libraries/Internal.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/MerkleMultiProof.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Internal"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts@1.4.0_ethers@6.15.0/node_modules/@chainlink/contracts/src/v0.8/shared/call/CallWithExactGas.sol": {
+      "lastModificationDate": 1764226086012,
+      "contentHash": "b1e24308b5d2cdcac5b65455f4cac3bb",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/call/CallWithExactGas.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CallWithExactGas"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/utils/introspection/ERC165Checker.sol": {
+      "lastModificationDate": 1764226090167,
+      "contentHash": "d41fd30330bf3f3ba8899c53c3450473",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/utils/introspection/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC165Checker"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts-ccip@1.6.3_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/contracts-ccip/contracts/libraries/MerkleMultiProof.sol": {
+      "lastModificationDate": 1764226089681,
+      "contentHash": "2c3e98d7777205e6fa41c8ae31b136f4",
+      "sourceName": "@chainlink/contracts-ccip/contracts/libraries/MerkleMultiProof.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "MerkleMultiProof"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1764226090173,
+      "contentHash": "de0163561b417b800d01749cbbe2147e",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1764226090167,
+      "contentHash": "6a55c353946e471d9792965d06208295",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1764226090154,
+      "contentHash": "4c80b7fdf559a9a348e832a57d072a0b",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/utils/Context.sol": {
+      "lastModificationDate": 1764226090159,
+      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/access/IAccessControl.sol": {
+      "lastModificationDate": 1764226090170,
+      "contentHash": "e3a14b0714caaaa82d58fa0bc3756079",
+      "sourceName": "@chainlink/local/src/vendor/openzeppelin-solidity/v5.0.2/contracts/access/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IAccessControl"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/ccip/CCIPLocalSimulator.sol": {
+      "lastModificationDate": 1764226090157,
+      "contentHash": "1dbc8433562537336a17097eec804a77",
+      "sourceName": "@chainlink/local/src/ccip/CCIPLocalSimulator.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../shared/WETH9.sol",
+        "../shared/LinkToken.sol",
+        "./BurnMintERC677Helper.sol",
+        "../vendor/chainlink-ccip/test/mocks/MockRouter.sol",
+        "@chainlink/contracts-ccip/contracts/interfaces/IRouterClient.sol",
+        "../vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/IERC20.sol",
+        "../vendor/openzeppelin-solidity/v4.8.3/contracts/token/ERC20/utils/SafeERC20.sol",
+        "@chainlink/contracts-ccip/contracts/interfaces/IOwner.sol",
+        "@chainlink/contracts-ccip/contracts/interfaces/IGetCCIPAdmin.sol",
+        "../vendor/openzeppelin-solidity/v5.0.2/contracts/access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "CCIPLocalSimulator"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/shared/WETH9.sol": {
+      "lastModificationDate": 1764226090189,
+      "contentHash": "6dd2b8bc0aceb2c3e9a9d0a939b3f7d8",
+      "sourceName": "@chainlink/local/src/shared/WETH9.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "WETH9"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/shared/LinkToken.sol": {
+      "lastModificationDate": 1764226090177,
+      "contentHash": "be65998f43b0b3d9c3067dc794c61e6f",
+      "sourceName": "@chainlink/local/src/shared/LinkToken.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../vendor/chainlink/shared/token/ERC677/ERC677.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "LinkToken"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts-ccip@1.6.3_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/contracts-ccip/contracts/interfaces/IGetCCIPAdmin.sol": {
+      "lastModificationDate": 1764226089670,
+      "contentHash": "cc3d788b51caca2637b852e5de394d66",
+      "sourceName": "@chainlink/contracts-ccip/contracts/interfaces/IGetCCIPAdmin.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IGetCCIPAdmin"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+contracts-ccip@1.6.3_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/contracts-ccip/contracts/interfaces/IOwner.sol": {
+      "lastModificationDate": 1764226089675,
+      "contentHash": "fa7f40cf6baf0e1f3ff4887ae034420a",
+      "sourceName": "@chainlink/contracts-ccip/contracts/interfaces/IOwner.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOwner"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@chainlink+local@0.2.7_@types+node@24.10.1_ethers@6.15.0/node_modules/@chainlink/local/src/ccip/BurnMintERC677Helper.sol": {
+      "lastModificationDate": 1764226090156,
+      "contentHash": "aae266ff79d58fd5826ffcfdc590892d",
+      "sourceName": "@chainlink/local/src/ccip/BurnMintERC677Helper.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../vendor/chainlink/shared/token/ERC677/BurnMintERC677.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "BurnMintERC677Helper"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/contracts/CCIPSimulator.sol": {
+      "lastModificationDate": 1764224898945,
+      "contentHash": "33f853a6029c04e2e38f864c2e891605",
+      "sourceName": "contracts/CCIPSimulator.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/local/src/ccip/CCIPLocalSimulator.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1764226090130,
+      "contentHash": "5df8fdb527e563085847cad29e3c5f2e",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/interfaces/IERC721.sol": {
+      "lastModificationDate": 1764226090130,
+      "contentHash": "d8d23fc2f55ed934d1a1b91c9afd8526",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": []
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/interfaces/IERC4906.sol": {
+      "lastModificationDate": 1764226090128,
+      "contentHash": "7f130e0d70179d683e9b9df0dda38a51",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC4906.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol",
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC4906"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/interfaces/IERC165.sol": {
+      "lastModificationDate": 1764226090122,
+      "contentHash": "f808b485ee0cdc6768ee8385ae5f9a2a",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": []
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
+      "lastModificationDate": 1764226090110,
+      "contentHash": "50d770b698931f015309e77a750f54f6",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../utils/Strings.sol",
+        "../../../interfaces/IERC4906.sol",
+        "../../../interfaces/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC721URIStorage"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1764226090106,
+      "contentHash": "1e64e2ad597dc5b2dae11346502baad4",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol",
+        "../../interfaces/draft-IERC6093.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1764226090142,
+      "contentHash": "ba57ff4ddf1d9cae9d2009792795b7f6",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol",
+        "./math/SignedMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1764226090094,
+      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+      "lastModificationDate": 1764226090096,
+      "contentHash": "4aefc698f77ecbace7f401257dfe182d",
+      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC1155Errors",
+        "IERC20Errors",
+        "IERC721Errors"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1764226090100,
+      "contentHash": "6a55c353946e471d9792965d06208295",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1764226090132,
+      "contentHash": "fc8a9841f4bdd6329c26a00d5e75f4b3",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1764226090132,
+      "contentHash": "12c206f185cb951213799561fdcaa40d",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1764226090135,
+      "contentHash": "718fa8ba0ff269c92e364c1429d9de57",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
+      "lastModificationDate": 1764226090141,
+      "contentHash": "b6c6bdc7aaca4fe5b680760a72e09d3e",
+      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol": {
+      "lastModificationDate": 1764226090107,
+      "contentHash": "4c81010564fe4bcfa8a3ba8fe66d4773",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC721Burnable"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1764226090137,
+      "contentHash": "d3c790edc9ccf808a17c5a6cd13614fd",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/contracts/MyToken.sol": {
+      "lastModificationDate": 1764226650017,
+      "contentHash": "dedd20d912ab55638a8eaeac5f07db09",
+      "sourceName": "contracts/MyToken.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+        "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "MyToken"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol": {
+      "lastModificationDate": 1764226090108,
+      "contentHash": "6f49fe93ad40dc0bd4cac0cc124d0415",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./IERC721Enumerable.sol",
+        "../../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC721Enumerable"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
+      "lastModificationDate": 1764226090131,
+      "contentHash": "3fdc14aab706458ae99314f6f7f529a2",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/wangshan/资源/学习资料/Web3/Web3_learning_demos/04-hardhat2-crosschain-NFT/contracts/WrappedNFTReciever.sol": {
+      "lastModificationDate": 1764226660298,
+      "contentHash": "a761fbdd502cd254f2fe9b2b23a1956a",
+      "sourceName": "contracts/WrappedNFTReciever.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./MyToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "WrappedNFTReciever"
+      ]
+    }
+  }
+}
