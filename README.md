@@ -72,24 +72,5 @@ npx hardhat node
   - 实现 NFT 合约的跨链功能，利用 chainlink CCIP[官方网站：https://docs.chain.link/ccip/tutorials/evm/send-arbitrary-data-receipt-acknowledgment] 的跨链功能，实现 NFT 在不同链上的交互
     1. CCIP 模拟器：[官方网站：https://github.com/smartcontractkit/chainlink-local]
     2. 安装`@chainlink/contracts-ccip` 和 `@chainlink/local`
-    3. 
-       
-
-## 05-hardhat3-crosschain-nft
-  - 技术栈：hardhat3: ts 和 ES模块，采用 mocha 和 chai 单元测试
-  - 开发 NFT 合约，并部署和铸造 NFT 到 ganache 网络和相应账号上，通过 metaMask 查看 ❌`报错，待解决`
-    1. 在 hardhat.config.ts 中加 ganache 的测试网配置
-    2. 在 hardhat.config.ts 中设置 ganache 的测试账号，hardhat3 中用的是自带的task 指令`keystore`来存储变量, `npx hardhat --help`查看具体的使用，设置两个 ganache 的测试账号`GANACHA_PRIVATE_KEY_1`和`GANACHA_PRIVATE_KEY_2`
-       ```shell
-        npx hardhat keystore set GANACHA_PRIVATE_KEY1     /*设置*/
-        npx hardhat keystore get GANACHA_PRIVATE_KEY2     /*查看*/
-        npx hardhat keystore delete GANACHA_PRIVATE_KEY_1  /*删除具体的内容*/
-        npx hardhat keystore list   /*查看所有设置的内容*/
-        npx hardhat keystore path   /*文件路径*/
-
-       ```
-    3. 用 hardhat ts 脚本部署 MyToken.sol 合约
-       ```shell
-       npx hardhat run scripts/deployMyToken.ts --network ganache
-       ```
    
+       
